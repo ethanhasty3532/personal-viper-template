@@ -1,0 +1,17 @@
+{
+  "$comment": "VIPER — trình duyệt cho phiên chính khi meta tự tay dùng sản phẩm (/viper-dogfood Bước 2). Sáu vai viper-user-* KHÔNG dùng server này: mỗi vai khai inline trong frontmatter của mình để có trình duyệt riêng, nhờ vậy chạy song song không giẫm chân nhau (trình duyệt riêng nhưng DB thì chung, nên dogfood vẫn chia hai đợt tối đa 3 vai). Dùng 'npm exec' thay 'npx' vì trên một số máy npx trong PATH là gói standalone đời cũ không hiểu -y; npm thì chỉ có một bản. Cách dùng: .claude/skills/viper-browse/SKILL.md",
+  "mcpServers": {
+    "browser": {
+      "command": "npm",
+      "args": [
+        "exec",
+        "-y",
+        "--",
+        "@playwright/mcp@latest",
+        "--isolated",
+        "--viewport-size",
+        "1280,800"
+      ]
+    }
+  }
+}
