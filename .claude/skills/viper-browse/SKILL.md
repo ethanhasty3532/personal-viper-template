@@ -13,6 +13,8 @@ description: >
 > Luật #8 nói **không báo xong khi chưa tự dùng**. Skill này là công cụ để "dùng" nghĩa là dùng thật:
 > mở trình duyệt, bấm, nhìn màn hình. Đọc code rồi suy ra "chắc chạy được" **không tính**.
 
+Flutter Web: đọc `stack-flutter §6` để kiểm tra khả năng truy cập canvas và ghi đúng phạm vi bằng chứng. Skill này chỉ điều khiển web; Android/iOS native cần công cụ thiết bị và integration_test riêng.
+
 ## 1. Chạy bằng gì
 
 Playwright MCP (`@playwright/mcp`) — bản chính chủ của Playwright. Template khai sẵn ở hai nơi:

@@ -212,11 +212,16 @@ Skill pack dạng text + lệnh scaffold chính chủ — **không giữ boilerp
 | `stack-fastapi` | Sản phẩm dính AI/LLM hoặc data | Railway / Fly.io |
 | `stack-go` | Cần hiệu năng, binary gọn | Fly.io / Render |
 | `stack-spring-boot` | Đội sẵn có Java, hoặc ràng buộc JVM | Render / Railway |
+| `stack-flutter` | App Flutter, dùng Cubit mặc định; Bloc khi cần | Play Store / TestFlight / web hosting |
 | `addon-graphql` | Lắp lên NestJS hoặc Next.js khi client cần query linh hoạt | — |
 
 Mỗi skill có cùng khung 8 mục: khi nào chọn/không chọn · scaffold · cấu trúc thư mục · 6 lệnh Makefile · preset production-ready · deploy · forbidden patterns · snippet then chốt.
 
 Thêm stack mới: copy khung 8 mục của `stack-nextjs-fullstack`, viết cho stack của mình.
+
+Với app Flutter, yêu cầu ở pha V: **“Dùng stack-flutter, Cubit mặc định; Bloc khi cần điều phối sự kiện.”**
+Chốt thêm Android/iOS/web, backend và kênh phát hành. Skill có kiến trúc theo tính năng,
+test Cubit/widget/integration và cách ghi bằng chứng dogfood riêng cho web/native.
 
 ---
 

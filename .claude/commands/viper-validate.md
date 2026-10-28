@@ -98,6 +98,8 @@ Trước khi viết tài liệu: tóm tắt lại từng mục, đọc cho Autho
 
 Đọc mục "Khi nào chọn / không chọn" của các skill `stack-*`. Đề xuất một stack kèm lý do và đánh đổi, để Authority chốt. Mặc định cân nhắc trước: `stack-nextjs-fullstack` (nhanh nhất cho MVP một ngày).
 
+Nếu Authority chọn Flutter, dùng `stack-flutter`: Cubit mặc định, Bloc khi cần điều phối sự kiện. Chốt platform, backend và kênh phát hành; app store thay PaaS cho target mobile. Không tự thêm backend target ở đường phỏng vấn; cần nhiều target thì chọn đường intake.
+
 (Đường intake: bước này chỉ chạy khi intake **không** có `TECHSTACK.md` — có thì stack đã được Authority định nghĩa, xem I2.)
 
 ### Bước 5 — Viết context

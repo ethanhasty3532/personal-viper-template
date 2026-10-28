@@ -23,6 +23,8 @@ last_reviewed: "{{DATE}}"
 |---|---|---|---|---|
 | (template) | Dùng quy trình VIPER cho dự án này | Sản phẩm nhỏ, solo, cần ra trong 1 tuần để test phản ứng | Phạm vi khoá được trong 2h ở pha V | Có — chuyển sang MESH nếu vượt ngưỡng |
 
+| (template) | Bổ sung stack-flutter, dùng Cubit mặc định; Bloc khi cần điều phối sự kiện | Hỗ trợ app Flutter theo yêu cầu; không tự chọn stack cho mọi dự án | Backend và nền tảng phát hành được chốt riêng ở pha V; web không thay kiểm thử native | Có — sửa skill và sinh lại bản Codex |
+
 <!-- Dòng seed trên cố ý ghi ngày là "(template)" để gate V KHÔNG đếm nó —
      gate đòi ≥2 quyết định có ngày ISO do chính dự án này ghi ra. -->
 

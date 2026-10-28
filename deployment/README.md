@@ -28,7 +28,7 @@ deployment/
 
 | Artifact | Khi nào cần |
 |---|---|
-| `docker-compose.yml` | DB local cho `make dev` — mọi stack trong kho đều dùng (xem `stack-<tên>/SKILL.md §2`) |
+| `docker-compose.yml` | DB local cho `make dev` khi target cần DB server; Flutter client không tự cần Docker/DB (xem `stack-<tên>/SKILL.md §2`) |
 | `.env` | Bản copy từ `deployment/.env.example` đã điền giá trị local. **Không commit** |
 | `init.sql` / `seed.*` | Dữ liệu mẫu để dùng thử — nguồn: `context/PRD.md §7` (dữ liệu mẫu). Không có dữ liệu thì `/viper-dogfood` không chạy được |
 | `Dockerfile.dev`, script khởi động | Chỉ khi stack cần; đừng dựng sẵn "cho đủ bộ" |

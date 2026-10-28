@@ -239,8 +239,10 @@ def test_bootstrap(s: Suite, tmp: Path) -> Path | None:
     # Công cụ của template không được rơi vào dự án thật
     for f in ("scripts/selftest.py", "scripts/bootstrap.py"):
         s.check(f"KHÔNG copy {f} (công cụ của template)", not (proj / f).exists())
-    s.check("5 stack skill VẪN còn (stack chỉ chốt ở pha V, sau bootstrap)",
-            len(list((proj / ".claude/skills").glob("stack-*"))) == 5)
+    s.check("6 stack skill VẪN còn, bao gồm Flutter (chốt ở pha V)",
+            {p.name for p in (proj / ".claude/skills").glob("stack-*")} ==
+            {"stack-nextjs-fullstack", "stack-nestjs-react", "stack-fastapi",
+             "stack-go", "stack-spring-boot", "stack-flutter"})
 
     # README phải là của dự án, không phải của template
     rd = (proj / "README.md").read_text(encoding="utf-8")
@@ -1619,7 +1621,8 @@ def test_config(s: Suite, proj: Path) -> None:
                     "song song không giẫm chân")
 
     skills = sorted(x.parent.name for x in (proj / ".claude/skills").rglob("SKILL.md"))
-    s.check("có 9 skill kể cả viper-browse", len(skills) == 9 and "viper-browse" in skills,
+    s.check("có 10 skill kể cả viper-browse và stack-flutter",
+            len(skills) == 10 and {"viper-browse", "stack-flutter"}.issubset(skills),
             str(skills))
 
     # tham chiếu chéo trong tài liệu phải tồn tại thật

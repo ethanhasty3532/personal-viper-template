@@ -84,6 +84,7 @@ make dev  make check  make test  make migrate  make deploy  make doctor
 | `stack-fastapi` | Sản phẩm dính AI/LLM hoặc xử lý dữ liệu |
 | `stack-go` | Cần hiệu năng, binary gọn, ít phụ thuộc |
 | `stack-spring-boot` | Đội sẵn có Java, hoặc phải tích hợp hệ thống Java cũ |
+| `stack-flutter` | App Flutter Android/iOS/web, dùng Cubit mặc định; Bloc khi cần điều phối sự kiện |
 | `addon-graphql` | Lắp thêm lên NestJS hoặc Next.js khi client cần query linh hoạt |
 
 Chốt xong → ghi `context/TECHSTACK.md` + 1 dòng `DECISIONS.md`.

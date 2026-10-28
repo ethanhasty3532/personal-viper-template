@@ -161,6 +161,7 @@ Artifact để **chạy** sản phẩm nằm ở `deployment/` — `.env.example
 | `stack-fastapi` | Sản phẩm dính AI/LLM hoặc data |
 | `stack-go` | Cần hiệu năng / binary gọn |
 | `stack-spring-boot` | Hợp đội sẵn có Java |
+| `stack-flutter` | App Flutter Android/iOS/web, dùng Cubit mặc định; Bloc khi cần điều phối sự kiện |
 | `addon-graphql` | Lắp GraphQL lên NestJS hoặc Next.js |
 
 ---

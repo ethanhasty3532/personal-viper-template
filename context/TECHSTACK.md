@@ -31,6 +31,8 @@ last_reviewed: "{{DATE}}"
 | Skill đang dùng | _CHƯA ĐIỀN_ | — | |
 | Ngôn ngữ | _CHƯA ĐIỀN_ | | |
 | Framework | | | |
+| State management (nếu có UI) | | | |
+| Nền tảng / kênh phát hành (nếu mobile) | | | |
 | Database | | | |
 | ORM / query layer | | | |
 | Auth | | | |
@@ -38,7 +40,7 @@ last_reviewed: "{{DATE}}"
 | Test runner | | | |
 | Deploy | | | |
 
-`Skill đang dùng` phải là một trong: `stack-nextjs-fullstack` · `stack-nestjs-react` · `stack-fastapi` · `stack-go` · `stack-spring-boot` (+ `addon-graphql` nếu có), hoặc — chỉ ở đường intake — `custom (intake — theo intake/TECHSTACK.md)`. Chi tiết cách dựng, cấu trúc thư mục, preset production-ready nằm trong `.claude/skills/<tên>/SKILL.md` — **không chép lại vào đây**.
+`Skill đang dùng` phải là một trong: `stack-nextjs-fullstack` · `stack-nestjs-react` · `stack-fastapi` · `stack-go` · `stack-spring-boot` · `stack-flutter` (+ `addon-graphql` nếu có), hoặc — chỉ ở đường intake — `custom (intake — theo intake/TECHSTACK.md)`. Chi tiết cách dựng, cấu trúc thư mục, preset production-ready nằm trong `.claude/skills/<tên>/SKILL.md` — **không chép lại vào đây**.
 
 <!-- Đường intake chọn được skill khớp nhất nhưng intake khác default ở vài chỗ → thêm
      mục này ngay dưới bảng của target đó, liệt kê từng chỗ lệch. Không có thì xoá.
@@ -68,7 +70,7 @@ _CHƯA ĐIỀN_
 
 ## 4. Version pinning
 
-Ghi version thật sau khi scaffold xong (đọc từ `package.json` / `go.mod` / `pyproject.toml` / `pom.xml`), để lần sau dựng lại được đúng.
+Ghi version thật sau khi scaffold xong (đọc từ `package.json` / `go.mod` / `pyproject.toml` / `pom.xml` / `pubspec.yaml` + `pubspec.lock` và `flutter --version`), để lần sau dựng lại được đúng.
 
 ```
 _CHƯA ĐIỀN_

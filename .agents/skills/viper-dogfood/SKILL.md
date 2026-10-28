@@ -16,6 +16,8 @@ description: Tự dùng sản phẩm + spawn 6 subagent đóng persona dùng th�
 make dev        # đảm bảo đang chạy
 ```
 
+**Target Flutter/mobile:** đọc `stack-flutter §6` trước khi chọn công cụ. Giữ đủ sáu vai và hai đợt. Flutter Web dùng `viper-browse`; tính năng native phải thử trên emulator/thiết bị bằng công cụ có thật và integration_test. Ghi rõ platform đã thử; thiếu công cụ thì ghi phần chưa kiểm chứng, không báo dogfood native đạt.
+
 Lấy URL đang chạy (mặc định `http://localhost:3000` hoặc `:8000`). Ở pha P thì dùng URL production.
 
 Đọc:

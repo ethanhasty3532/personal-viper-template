@@ -76,7 +76,7 @@ _(Source: `mobile-experiences/{{mobile-experience-name}}/CHARTER.md`)_
 |---|---|---|
 | Framework | {{tên framework mobile cross-platform 1 codebase}} | {{lý do + ADR ref}} |
 | Language | {{...}} | {{...}} |
-| State management | {{...}} | {{...}} |
+| State management | {{ví dụ Flutter: flutter_bloc, Cubit mặc định; Bloc khi cần}} | {{...}} |
 | GraphQL/API client | {{...}} | {{...}} |
 | Realtime (messaging) | {{...}} | {{...}} |
 | WebRTC / Calls | {{nếu có}} | {{...}} |

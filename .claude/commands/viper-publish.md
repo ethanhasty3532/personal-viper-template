@@ -32,6 +32,8 @@ Bốn mục gắn `(sau deploy)` — backup đã thử khôi phục · HTTPS · 
 
 Theo `stack-<tên>/SKILL.md §6`:
 
+Với target Flutter mobile, thực hiện kênh phân phối và phục hồi ở `stack-flutter §6` thay các thao tác PaaS dành cho server dưới đây. Vẫn phải đạt P1/P2, có artifact/version, smoke test trên thiết bị và diễn tập phục hồi; build thành công chưa phải đã phát hành. Backend và Flutter Web vẫn theo nơi deploy đã chốt.
+
 1. Tạo project trên PaaS, nối repo
 2. Tạo database, lấy chuỗi kết nối
 3. Đặt **đủ** biến môi trường (đối chiếu `deployment/.env.example` — thiếu một biến là hỏng lúc chạy thật)
